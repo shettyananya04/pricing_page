@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Gym Membership Plans</title>
+</head>
+<body>
+    
+    <div class="top-banner">
+        <p class="current-plan"> Your current Membership</p>
+        <p class="plan-type"> Basic Membership - Access to gym facilities</p>
+    </div>
+
+    <div class="container">
+      <h1 class="title">Choose a membership plan</h1>
+      <div class="toggle-switch">
+            <span>Billed annually </span>
+            <input type="checkbox" class="toggler">
+            <span> Billed monthly</span>
+      </div>
+
+      <div class="cards">
+
+        <!-- Basic Membership -->
+          <div class="card" id="card-1">
+            <h1 class="card-title">Basic</h1>
+            <h2 class="card-price" id="basic-price"> ₹500 <span> / month</span> </h2>
+            <ul class="card-plan">
+                <li> Access to gym facilities</li>
+                <li> Standard workout equipment</li>
+                <li> Open gym hours</li>
+                <li> No personal trainer</li>
+                <li> Email Support</li>
+            </ul>
+            <button type="button" class="card-btn"> Choose Plan</button>
+          </div>
+
+          <!-- Premium Membership -->
+          <div class="card active" id="card-2">
+            <h1 class="card-title">Premium</h1>
+            <h2 class="card-price" id="premium-price"> ₹1000 <span> / month</span> </h2>
+          
+            <select  id="membership-duration">
+                <option value="1">1 Month</option>
+                <option value="3">3 Months</option>
+                <option value="6">6 Months</option>
+                <option value="12">12 Months</option>
+            </select>
+            <span class="note"> Membership Duration </span>
+          
+            <ul class="card-plan">
+                <li> All basic features, Plus: </li>
+                <li> Access to premium workout equipment</li>
+                <li> Personal trainer sessions</li>
+                <li> Flexible hours</li>
+            </ul>
+            <button type="button" class="card-btn"> Choose Plan</button>
+          </div>
+
+          <!-- VIP Membership -->
+          <div class="card" id="card-3">
+            <h1 class="card-title">VIP</h1>
+            <h2 class="card-price"> Let's Discuss! </h2>
+            <ul class="card-plan">
+                <li> All premium features</li>
+                <li> VIP access to facilities</li>
+                <li> Customized workout plans</li>
+                <li> 24/7 gym access</li>
+            </ul>
+            <button type="button" class="card-btn"> Contact Us</button>
+          </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
